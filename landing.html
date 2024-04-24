@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gollis Form Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/logo gollis.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+
+
+
+   <style>
+    .navs{
+        text-align: center;
+        display: inline-block;
+        gap:310px;
+        justify-content: center;
+        align-items: center;
+        margin-top:15px;;
+        
+        float:inline-end;
+        
+       
+    }
+
+  .navs div{
+    font-size: 20px;;
+  }
+
+  .mobile{
+    position: absolute;
+    top: 20px;;
+    right:60px;
+
+
+  }
+   .navs div a{
+    text-decoration: none;
+    color:black;
+   }
+
+
+   .menus-mobile {
+    display: none;
+}
+
+
+.menu-mobile{
+    display: none;
+}
+
+   /* Define styles for screens with a width of up to 480px (xx-small) */
+@media screen and (max-width: 480px) {
+   
+
+    .topside img{
+       width: 90%;
+       position: absolute;
+       top:0;
+       right: 0;;
+       height:34px; 
+    }
+   
+   
+    .header-logo{
+       border-radius: 20px;
+         width: 90%;
+         margin: auto;
+         margin-top: 30px;
+         box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+         background-color: white;;
+         height: 70px;
+       
+     }
+ 
+     .navs {
+       display: none;
+    }
+      
+   }
+ 
+   .mobile{
+    display: block;
+   }
+ 
+   .mobile i{
+    font-size: 20px;
+   }
+ 
+   .mobile button {
+    background-color: #162aea;
+    color:white;
+   }
+ 
+  
+ 
+ 
+ /* Define styles for screens with a width between 481px and 600px (x-small) */
+ @media screen and (min-width: 481px) and (max-width: 600px) {
+  
+     .topside img{
+         width: 85%;
+         position: absolute;
+         top:0;
+         right: 0;;
+         height:34px;  
+      }
+ 
+      
+  .header-logo{
+     border-radius: 20px;
+       width: 90%;
+       margin: auto;
+       margin-top: -20px;
+       box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+       background-color: white;;
+       height: 70px;
+   }
+   .users{
+     background-color: #162aea;
+     border-radius: 35px;
+     color:white;
+     text-align: center;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+    width: 50px;
+    height: 50px;
+    
+  }
+   
+  .users i{
+   
+     font-size: 20px;
+     display: none;
+  }
+  .users select:hover {
+     display: block;
+      background-color: aliceblue;
+  }
+ 
+  .users select{
+     border-radius: 50%;
+     height: 40px;
+     width: 40px;
+     text-align: center;
+     align-items: center;
+  }
+  .users{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     gap:10px;
+ 
+  }
+ 
+ .navs {
+    display: none;
+ }
+ 
+ .mobile button{
+    margin-top: -8px;
+    margin-right: -20px;
+    font-size: 15px;
+ }
+  
+ 
+ 
+ }
+ 
+ /* Define styles for screens with a width between 601px and 800px (small) */
+ @media screen and (min-width: 601px) and (max-width: 800px) {
+     
+    .topside img{
+       width: 85%;
+       position: absolute;
+       top:0;
+       right: 0;;
+       height:40px;  
+    }
+ 
+    
+ .header-logo{
+   border-radius: 20px;
+     width: 90%;
+     margin: auto;
+     margin-top: -20px;
+     box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+     background-color: white;;
+     height: 84px;
+ }
+   
+ .navs {
+    display: none;
+ }
+ 
+  
+ }
+ 
+ /* Define styles for screens with a width between 801px and 1024px (medium) */
+ @media screen and (min-width: 801px) and (max-width: 1024px) {
+ 
+    .topside img{
+       width: 85%;
+       position: absolute;
+       top:0;
+       right: 0;;
+       height:50px;  
+    }
+ 
+    
+ .header-logo{
+   border-radius: 20px;
+     width: 90%;
+     margin: auto;
+     margin-top: -20px;
+     box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+     background-color: white;;
+     height: 94px;
+ }
+    .navs {
+       display: none;
+    }
+   
+     
+ }
+ 
+ 
+ /* Define styles for screens with a width between 1025px and 1200px (large) */
+ @media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .mobile{
+       display: none;
+      }
+      .navs {
+       display: block;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    .menus-mobile{
+        display: none;
+    }
+    
+ }
+ 
+ /* Define styles for screens with a width between 1201px and 1600px (x-large) */
+ @media screen and (min-width: 1201px) and (max-width: 1600px) {
+    .mobile{
+       display: none;
+      }
+      
+     .navs {
+       display: block;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    .menus-mobile{
+        display: none;
+    }
+ }
+ 
+ /* Define styles for screens with a width greater than 1600px (xx-large) */
+ @media screen and (min-width: 1601px) {
+    .mobile{
+       display: none;
+      }
+      .navs {
+       display: block;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    .menus-mobile{
+        display: none;
+    }
+ }
+
+
+
+
+.menu-mobile{
+    z-index: 11;
+    position: absolute;
+    height: 100vh;
+    top:-38px;
+    width: 100%;
+   
+}
+
+ .menus-mobile{
+
+    background-color: white;;
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.3);
+    float: inline-end;
+    z-index: 11;
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    top:0;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+ 
+    align-content: center;
+  
+ }
+.tops-sides img{
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 14px;
+    width: 105px;
+}
+.tops-sides button{
+    background-color: #162aea;
+}
+
+.tops-sides button:hover{
+    transform: translateY(-1px);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbars ul li a{
+    text-decoration: none;
+    font-size: 17px;
+     
+}
+
+
+.navbars li:hover{
+    width: 100px;
+  
+    background-color: #dedede;
+}
+
+.navbars li{
+    width: 100px;
+}
+
+
+/*
+.menus-mobile{
+    display: none;
+   }
+   */
+
+
+   #show,#showme{
+    cursor: pointer;
+   }
+
+ 
+   </style>
+</head>
+<body>
+
+    <div class="topside">
+        <img src="./images/blue bg.jpg" alt="">
+    </div>
+  
+   
+
+    <div class="hold-bgwhite">
+        <div class="header-logo">
+        <!-- <img src="./images/logo bg white.jpg" class="img-fluid" id="mainlogo" alt=""> -->
+        <div class=" navs  p-3 ">
+          <div class="btn btn-  text-capitalize "> <a href="#">home</a> </div>
+          <div class="btn btn-  text-capitalize "><a href="./index.html">login</a></div>
+          <div class="btn btn-  text-capitalize "> <a href="./register.html">Register</a>   </div>
+        
+        </div>
+    
+          </div>
+          <div class="mobile">
+         <button class="btn btn-" id="showme">  <i class="bi bi-list" id="show"></i></button>
+          </div>
+          <div class="menu-mobile">
+            <div class=" menus-mobile   " >
+              <div class="tops-sides d-flex align-content-center justify-content-between mt-4 pt-2">
+                <div> <img src="./images/Gollis University Logo A3 - Copy (2) - Copy23333333333.jpg"  width="100px" alt=""> </div>
+                <div class="mx-2"> <button class="btn btn-dark"><i class="bi bi-x fs-2 "></i></button> </div>
+              </div>
+                <div class="navbars mx-3 mt-4">
+                    <ul class="d-flex align-content-center flex-column gap-4 list-unstyled">
+                        <li class="btn btn-"><a href="#">Home</a></li>
+                        <li class="btn btn-"><a href="#">Login</a></li>
+                        <li class="btn btn-"><a href="#">Regsiter</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+       </div>
+    </div> 
+
+ <!-- <div class="holdform">
+    
+    <div class="form-card">
+        <h1 id="login">Login</h1>
+        <h1 id="admin">Admin</h1>
+       <form action="">
+            <div class="username">
+                <input type="text"  placeholder="username"  name="" id="username">
+            </div>
+
+            <div class="password">
+                <input type="text"  placeholder="password"  name="" id="username">
+            </div>
+
+            <div class="btns">
+                <button class="btn btn-"id="submit">Submit</button>
+                <span class="forget">  <div><a href="./forget.html"> Forgot password?</a></div> </span>
+                <button class="btn btn-outline" id="create">Create New account</button>
+            </div>
+       </form>
+    </div>
+ </div>
+  -->
+ 
+    <script src="./index.js"></script>
+</body>
+</html>
